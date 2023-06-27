@@ -3,7 +3,7 @@ const { MessageEmbed } = require('discord.js')
 module.exports = {
     data: {
       name: 'profit',
-      description: 'Calculate the profit made in a game',
+      description: 'Calculate the payout to each member of your crew',
       options: [
         {
           name: 'box_value',
@@ -44,13 +44,13 @@ module.exports = {
       const embed = new MessageEmbed()
         .setColor('#6A0505')
         .setTitle('Profit Calculation')
-        .setDescription('Each member should receive `' + sharePerMember.toFixed(2) + '` aUEC')
+        .setDescription('Each member should receive `' + sharePerMember + '` aUEC')
         .addFields(
-            { name: 'Box Value', value: `${cost} aUEC`, inline: true },
+            { name: 'Box Value', value: "`" + cost + "` aUEC", inline: true },
             { name: 'Number of Boxes', value: amount.toString(), inline: true },
             { name: 'Fee Percent to pay', value: `${feePercent}%`, inline: true },
             { name: 'Number of Members', value: members.toString(), inline: true },
-            { name: 'Total Profit', value: `${totalCost.toFixed(2)} aUEC`, inline: true }
+            { name: 'Total Profit', value: "`" + totalCost + "` aUEC", inline: true }
         )
         .setAuthor({ name: 'Lab Assistant', iconURL: 'https://cdn.discordapp.com/attachments/1111818198061416479/1123197311422562386/syndicate.png' })
 

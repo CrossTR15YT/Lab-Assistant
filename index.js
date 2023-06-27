@@ -18,7 +18,7 @@ client.once('ready', async () => {
 
   // Register slash commands
   try {
-    const commands = await client.guilds.cache.get('880415508774678618').commands.set(client.commands.map(command => command.data));
+    const commands = await client.application.commands.set(client.commands.map(command => command.data));
     console.log(`[INFO] Registered ${commands.size} slash commands`);
   } catch (error) {
     console.error('[ERROR] Failed to register slash commands:', error);
