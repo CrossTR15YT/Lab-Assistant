@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "discord.js": "^13.16.0"
+  },
+  "name": "lab-assistant",
+  "version": "0.1.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cross",
+  "license": "ISC",
+  "description": ""
+}
