@@ -46,7 +46,7 @@ module.exports = {
         .setTitle('Profit Calculation')
         .setDescription('Each member should receive `' + sharePerMember + '` aUEC')
         .addFields(
-            { name: 'Box Value', value: "`" + cost + "` aUEC", inline: true },
+            { name: 'Box Value', value: ``${cost}` aUEC`, inline: true },
             { name: 'Number of Boxes', value: amount.toString(), inline: true },
             { name: 'Fee Percent to pay', value: `${feePercent}%`, inline: true },
             { name: 'Number of Members', value: members.toString(), inline: true },
